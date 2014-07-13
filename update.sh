@@ -11,16 +11,16 @@ bower-update
 cd ..
 
 # update to new versions
-cp -r Sources/html5shiv/dist/* Bootstrap3-Workflow/public/javascripts/
-cp -r Sources/jquery/dist/* Bootstrap3-Workflow/public/javascripts/
-cp -r Sources/respond/dest/* Bootstrap3-Workflow/public/javascripts/
-cp -r Sources/modernizr/modernizr.js Bootstrap3-Workflow/app/assets/javascripts/
-cp -r Sources/bootstrap/dist/fonts/* Bootstrap3-Workflow/public/fonts/
-cp -r Sources/bootstrap/dist/js/* Bootstrap3-Workflow/public/javascripts/
-cp -r Sources/bootstrap/dist/css/bootstrap.min.css Bootstrap3-Workflow/public/stylesheets/main.css
-cp -r Sources/bootstrap/less/* Bootstrap3-Workflow/app/assets/stylesheets/less/
+cp -r Sources/html5shiv/dist/* PlayBootstrapProject/public/javascripts/
+cp -r Sources/jquery/dist/* PlayBootstrapProject/public/javascripts/
+cp -r Sources/respond/dest/* PlayBootstrapProject/public/javascripts/
+cp -r Sources/modernizr/modernizr.js PlayBootstrapProject/app/assets/javascripts/
+cp -r Sources/bootstrap/dist/fonts/* PlayBootstrapProject/public/fonts/
+cp -r Sources/bootstrap/dist/js/* PlayBootstrapProject/public/javascripts/
+cp -r Sources/bootstrap/dist/css/bootstrap.min.css PlayBootstrapProject/public/stylesheets/main.css
+cp -r Sources/bootstrap/less/* PlayBootstrapProject/app/assets/stylesheets/less/
 
-cd Bootstrap3-Workflow/app
+cd PlayBootstrapProject/app
 
 #Install grunt-browser-sync
 npm install grunt-browser-sync --save-dev

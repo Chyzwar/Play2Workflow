@@ -17,14 +17,14 @@
     <!-- Bootstrap JS -->
     <script type='text/javascript' src='@routes.Assets.at("javascripts/bootstrap.min.js")'></script>
 
-    <!-- Support for media queries an HTML5 in IE8 and IE9-->
+    <!-- Support for media queries and HTML5 in IE8 and IE9-->
     <!--[if lt IE 9]>
     <script type='text/javascript' src='@routes.Assets.at("javascripts/html5shiv.js")'></script>
     <script type='text/javascript' src='@routes.Assets.at("javascripts/respond.min.js")'></script>
     <![endif]-->
 
 
-    <!-- Modernizr for feature detection-->     
+    <!-- Modernizr for feature detection, remove in production-->     
     <script type='text/javascript' src='@routes.Assets.at("javascripts/modernizr.js")'></script>
     
 </head>
@@ -36,7 +36,7 @@
 
 
 
-    <!-- Browser sync -->
+    <!-- Browser sync  remove in Production-->
     <script type='text/javascript'>
     //<![CDATA[
     document.write("<script async src='//HOST:3000/browser-sync-client.1.1.2.js'><\/script>".replace(/HOST/g, location.hostname));

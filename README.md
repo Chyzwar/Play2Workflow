@@ -37,9 +37,11 @@ Play framework have some out-of box integration with Twitter Bootstrap but it is
             <li>change less entry point to stop play auto-compilaition of less files add this line to build.sbt
                 <ul>
                     <li>
-                    <pre> ``` 
-                    lessEntryPoints <<= baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")
-                    ```</pre></li>
+                    <pre> 
+                    lessEntryPoints (put here two less than sigh, damm markdown)= baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")
+                    </pre>
+                    </li>
+                    <li>Remove node_modules from build path in eclipse/Intelli</li>
                 </ul>
             </li>
         </ul>

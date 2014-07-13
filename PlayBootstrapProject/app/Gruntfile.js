@@ -38,8 +38,8 @@ module.exports = function(grunt) {
         },
           options: {
               watchTask: true,
-              //I am hosting my projects using apache virtual hosts, I define ServerName and /etc/hosts
-              host : "test.local",
+              //Play default server
+              host : "localhost:9000",
               ghostMode: {
                 clicks: true,
                 scroll: true,

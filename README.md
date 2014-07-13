@@ -34,12 +34,12 @@ Play framework have some out-of box integration with Twitter Bootstrap but it is
      <li>cd yourPlayAppliocation/app and:
         <ul>
             <li>grunt          → start grunt task in terminal</li>
-            <li>change less entry point to stop play auto-compilaition of less files add this line to build.sbt
+            <li>exclude less files to stop play auto-compilation and remove node_modules form build
                 <ul>
                     <li>
-                    lessEntryPoints `<<=` baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")
+                    add this line to build.sbt:  excludeFilter in (Assets, LessKeys.less) := "*.less"
                     </li>
-                    <li>Remove node_modules from build path in eclipse/Intelli</li>
+                    <li>Exclude node_modules from build path in eclipse/Intelli</li>
                 </ul>
             </li>
         </ul>
@@ -72,13 +72,13 @@ app                      → Application sources
  └ assets                → Compiled asset sources
     └ stylesheets        → Typically LESS CSS sources
         └ less           → Bootstrap LESS sources
-    └ javascripts        → modernizr.js 
+    └ javascripts        → Put your javascript there
   Gruntfile.js           → Grunt configuartion
   └ views                → Updated index.scala.html and main.scala.html
 
 public                   → Public assets
  └ stylesheets           → Bootstrap compiled CSS files
- └ javascripts           → Custom Javascript files and compilled javascrpit for Bootstrap, also HTML5shiv, Respond
+ └ javascripts           → Custom Javascript files and compilled javascrpit for Bootstrap, also HTML5shiv, Respond,modernizr.js 
  └ images                → Images files 
  └ fonts                 → Bootstrap fonts and any other
  └ jquery                → jQuery 

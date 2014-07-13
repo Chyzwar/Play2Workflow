@@ -36,7 +36,8 @@ Play framework have some out-of box integration with Twitter Bootstrap but it is
             <li>grunt          → start grunt task in terminal</li>
             <li>change less entry point to stop play auto-compilaition of less files add this line to build.sbt
                 <ul>
-                    <li>lessEntryPoints <pre><<=</pre> baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")</li>
+                    <li>
+                    <pre>lessEntryPoints <<= baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")</li></pre>
                 </ul>
             </li>
         </ul>

@@ -34,6 +34,11 @@ Play framework have some out-of box integration with Twitter Bootstrap but it is
      <li>cd yourPlayAppliocation/app and:
         <ul>
             <li>grunt          → start grunt task in terminal</li>
+            <li>change less entry point to stop play autocompilaition of less files add dis line to build.sbt
+                <ul>
+                    <li>lessEntryPoints <<= baseDirectory(_ / "app" / "assets" / "stylesheets" / "less" ** "custom.less")</li>
+                </ul>
+            </li>
         </ul>
     </li>
 </ol>
@@ -45,7 +50,7 @@ Play framework have some out-of box integration with Twitter Bootstrap but it is
 <h2>Updating Dependencies</h2>
 <p>If you use linux , you can run: </p>
 <ol>
-    <li>chmod 755 update.sh</li>
+    <li>chmod 755 ./update.sh</li>
     <li>sudo update.sh</li>
 </ol>
 
